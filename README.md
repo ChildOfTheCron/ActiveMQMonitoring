@@ -12,6 +12,7 @@ Example config template:
  	[Queue]
  	Queue1 = http://<HOST>:<PORT>/api/jolokia/read/org.apache.activemq:type=Broker,brokerName=localhost,destinationName=<QUEUE_NAME_ONE>,destinationType=Queue
  	Queue2 = http://<HOST>:<PORT>/api/jolokia/read/org.apache.activemq:type=Broker,brokerName=localhost,destinationName=<QUEUE_NAME_TWO>,destinationType=Queue
+  ...
  	[AuthUser]
  	User = username
  	Pass = password
