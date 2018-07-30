@@ -41,8 +41,8 @@ if __name__ == "__main__":
 	oldObjectPool = {}
 	newObjectPool = {}	
 
-	queueUser = 'user'
-	queuePass = 'user'
+	queueUser = 'username'
+	queuePass = 'userpassword'
 	flagConsumerDown = False
 	flagSizeIssue = False
 

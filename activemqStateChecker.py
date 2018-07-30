@@ -41,8 +41,8 @@ if __name__ == "__main__":
 	oldObjectPool = {}
 	newObjectPool = {}	
 
-	queueUser = 'user'
-	queuePass = 'user'
+	queueUser = 'username'
+	queuePass = 'userpassword'
 	flagConsumerDown = False
 	flagSizeIssue = False
 
@@ -65,12 +65,8 @@ if __name__ == "__main__":
 	for key in oldObjectPool:
 		if (key in newObjectPool):
 			if (oldObjectPool[key].consumerData == 0 or newObjectPool[key].consumerData == 0):
-				#print("WARNING: No consumers found for one or more ingest queues.")
- 				#sys.exit(1)
 				flagConsumerDown = True
 			if (oldObjectPool[key].queueData < newObjectPool[key].queueData):
-				#print("WARNING: Ingest queue size larger than set threshold for one or more queues.")
-				#sys.exit(1)
 				flagSizeIssue = True
 
 	if (flagConsumerDown and flagSizeIssue):
