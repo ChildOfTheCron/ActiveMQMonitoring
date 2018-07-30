@@ -7,7 +7,7 @@ http://<HOST>:<PORT>/api/jolokia/read/org.apache.activemq:type=Broker,brokerName
  
 For the non-nagios script I felt fancy and use the neat python config api I just learnt about. This way we can check many queues in one script run.
 Wait time in min here allows you to set the amount of time to wait between the first check and the second before doing a comparison.
-Example script format is:
+Example config template:
 ```
  	[Queue]
  	Queue1 = http://<HOST>:<PORT>/api/jolokia/read/org.apache.activemq:type=Broker,brokerName=localhost,destinationName=<QUEUE_NAME_ONE>,destinationType=Queue
