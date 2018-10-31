@@ -19,3 +19,5 @@ Example config template:
  	[WaitTime]
         InMin = 10
 ``` 
+
+The jolokaiLogStash.conf was part of a local containerized ELK stack, used as a proof of concept. It uses Kibana to visualize queue size changes from ActiveMQ over time. The conf contains the regex I used to grab the queue size from the json.
